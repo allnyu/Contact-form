@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 10px;
+    padding: 15px 10px;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@ body{
     width: 100%;
 }
 .success-msg p{
-    font-size: 16px;
+    font-size: 1rem;
     padding: 10px;
 }
 .msgsent{
@@ -38,10 +38,10 @@ body{
     padding-left: 10px;
 }
 .msgsent p{
-    font-size: 16px;
+    font-size: 1rem;
 }
 h2{
-    font-size: 30px;
+    font-size: 2rem;
 }
 .hidden{
     display: none;
@@ -50,7 +50,7 @@ h2{
 /*User Info*/
 .mcontainer{
     background-color: hsl(0, 0%, 100%);
-    max-width: 340px;
+    max-width: 21.25rem;
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -60,7 +60,7 @@ h2{
 }
 .user-fistname, .user-lastname, .user-email{
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     color: hsl(187, 24%, 22%);
 }
 .req{
@@ -73,7 +73,7 @@ input[type=text]{
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 input[type=text]:hover{
     border-color: hsl(169, 82%, 27%);
@@ -91,7 +91,7 @@ label::after{
 /*Query*/
 .query{
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 1rem;
     color: hsl(187, 24%, 22%);
 }
 .type1, .type2{
@@ -99,7 +99,7 @@ label::after{
     border-radius: 5px;
     padding: 15px;
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 1.1rem;
     cursor: pointer;
     outline: none;
     width: 100%;
@@ -121,7 +121,7 @@ input[type=radio]{
 
 /*Message*/
 .msg{
-    font-size: 16px;
+    font-size: 1rem;
     margin: 20px 0;
 }
 .msgtxt{
@@ -134,7 +134,7 @@ input[type=radio]{
     padding: 20px;
     border-color: hsl(186, 15%, 59%);
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .msgtxt:focus{
     border-color: hsl(169, 82%, 27%);
@@ -166,7 +166,7 @@ input[type=checkbox]{
     border: none;
     background-color: hsl(169, 82%, 27%);
     color: hsl(0, 0%, 100%);
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -176,7 +176,7 @@ input[type=checkbox]{
 
 /*Attribution*/
 .attribution{
-    font-size: 12px; text-align: center;
+    font-size: 0.75rem; text-align: center;
 }
 .attribution a{
     color: hsl(228, 45%, 44%);
@@ -203,21 +203,21 @@ input[type=checkbox]{
         gap: 15px;
     }
     .mcontainer{
-        max-width: 500px;
+        max-width: 31rem;
     }
     .success-msg{
-        max-width: 440px;
+        max-width: 27.5rem;
     }
     .msgtxt{
-        min-height: 150px;
+        min-height: 10rem;
     }
 }
 
-@media (min-width:576px){
+@media (min-width:768px){
     .mcontainer{
-        max-width: 650px;
+        max-width: 41rem;
     }
     .msgtxt{
-        min-height: 100px;
+        min-height: 6.25rem;
     }
 }
