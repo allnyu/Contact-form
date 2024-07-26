@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background: hsl(148, 38%, 91%);
+    scroll-behavior: smooth;
+}
+
+/*Success msg*/
+.success-msg{
+    display: block;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(185, 24%, 22%);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 340px;
+    width: 100%;
+}
+.success-msg p{
+    font-size: 16px;
+    padding: 10px;
+}
+.msgsent{
+    display: flex;
+}
+.msgsent img{
+    padding-left: 10px;
+}
+.msgsent p{
+    font-size: 16px;
+}
+h2{
+    font-size: 30px;
+}
+.hidden{
+    display: none;
+}
+
+/*User Info*/
+.mcontainer{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 340px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.mcontainer h2{
+    padding-bottom: 10px;
+}
+.user-fistname, .user-lastname, .user-email{
+    margin-top: 10px;
+    font-size: 16px;
+    color: hsl(187, 24%, 22%);
+}
+.req{
+    color: hsl(169, 82%, 27%);
+}
+input[type=text]{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type=text]:hover{
+    border-color: hsl(169, 82%, 27%);
+}
+input[type=text]:focus{
+    border-color: hsl(169, 82%, 27%);
+    outline: none;
+}
+label::after{
+    content: "*";
+    color: hsl(169, 82%, 27%);
+    margin-left: 5px;
+}
+
+/*Query*/
+.query{
+    padding-top: 20px;
+    font-size: 16px;
+    color: hsl(187, 24%, 22%);
+}
+.type1, .type2{
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+.type1 label, .type2 label{
+    cursor: pointer;
+}
+input[type=radio]{
+    margin: 0 15px;
+    accent-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.type1:has(input[type=radio]:checked),
+.type2:has(input[type=radio]:checked){
+    background-color: hsl(148, 38%, 91%);
+    border-color: hsl(169, 82%, 27%);
+}
+
+/*Message*/
+.msg{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.msgtxt{
+    width: 100%;
+    min-height: 240px;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 10px;
+    outline: none;
+    padding: 20px;
+    border-color: hsl(186, 15%, 59%);
+    cursor: pointer;
+    font-size: 16px;
+}
+.msgtxt:focus{
+    border-color: hsl(169, 82%, 27%);
+}
+
+/*Consent*/
+#checkbox{
+    display: block;
+}
+.ccontainer{
+    display: flex;
+    margin: 10px 0;
+}
+.consent label{
+    padding: 0 10px;
+}
+input[type=checkbox]{
+    margin-right: 20px;
+    transform: scale(1.2);
+    accent-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+
+/*Submit Button*/
+.submit{
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: hsl(185, 24%, 22%);
+}
+
+/*Attribution*/
+.attribution{
+    font-size: 12px; text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+/*Error*/
+.user-fistname.error input,
+.msg.error textarea{
+    border-color: hsl(0, 66%, 54%);
+}
+.user-fistname.error span,
+.user-email.error span,
+.query span,
+.msg.error span,
+.ccontainer.error span{
+    color: hsl(0, 66%, 54%);
+}
+
+/*Media Query*/
+@media (min-width:576px){
+    .user-name,
+    .qcontainer{
+        display: flex;
+        gap: 15px;
+    }
+    .mcontainer{
+        max-width: 500px;
+    }
+    .success-msg{
+        max-width: 440px;
+    }
+    .msgtxt{
+        min-height: 150px;
+    }
+}
+
+@media (min-width:576px){
+    .mcontainer{
+        max-width: 650px;
+    }
+    .msgtxt{
+        min-height: 100px;
+    }
+}
